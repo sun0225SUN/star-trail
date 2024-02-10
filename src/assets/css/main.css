@@ -4,7 +4,11 @@
 }
 
 body {
-  font-family: pingfang sc, helvetica, arial, sans-serif;
+  font-family:
+    pingfang sc,
+    helvetica,
+    arial,
+    sans-serif;
   font-size: 16px;
   line-height: 1.6;
   color: #333;

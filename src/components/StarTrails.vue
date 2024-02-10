@@ -91,7 +91,7 @@ onMounted(() => {
   drawStar()
 
   // 根据比例调整圆心
-  if (showWidth < showHeight * 1.5)
+  if (showWidth < showHeight)
     showContext.translate(showWidth, showHeight)
   else
     showContext.translate(showWidth, 0)
@@ -116,7 +116,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div h-100vh>
+  <div h-130vh>
     <canvas id="trails" wh-full />
   </div>
 </template>
