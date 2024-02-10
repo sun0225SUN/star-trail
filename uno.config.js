@@ -14,6 +14,10 @@ export default defineConfig({
     // 排版
     presetTypography(),
   ],
+  rules: [
+    // 自定义规则
+    ['wv', { 'writing-mode': 'vertical-rl' }],
+  ],
   shortcuts: [
     ['wh-full', 'w-full h-full'],
     ['f-b-c', 'flex justify-between items-center'],

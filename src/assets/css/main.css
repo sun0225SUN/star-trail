@@ -13,3 +13,7 @@ body {
   line-height: 1.6;
   color: #333;
 }
+
+a {
+  text-decoration: none;
+}
