@@ -39,7 +39,7 @@ window.addEventListener('scroll', () => {
           </div>
         </div>
       </div>
-      <div ml-50vw mt-50>
+      <div ml-50vw mt-30>
         <h1 text-white>
           测试文本，占位
         </h1>
