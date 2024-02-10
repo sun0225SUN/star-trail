@@ -17,6 +17,8 @@ declare module 'vue' {
     MyComponent: typeof import('./src/components/MyComponent.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
+    StarTrails: typeof import('./src/components/StarTrails.vue')['default']
+    StraTrails: typeof import('./src/components/StraTrails.vue')['default']
     TheWelcome: typeof import('./src/components/TheWelcome.vue')['default']
     WelcomeItem: typeof import('./src/components/WelcomeItem.vue')['default']
   }
