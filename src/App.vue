@@ -105,11 +105,21 @@ onMounted(() => {
         </div>
         <div mx-10 mb-10 flex justify-between>
           <div class="text-white/80">
-            <p>嗨，你好，我是小孙同学。</p>
-            <p>热爱编程、摄影、读书、旅行。</p>
-            <p>热爱计算机科学和 IT 互联网事业，希望能成为一名优秀的开发者。</p>
-            <p>我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。</p>
-            <p>We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.</p>
+            <p leading-8>
+              嗨，你好，我是小孙同学。
+            </p>
+            <p leading-8>
+              热爱编程、摄影、读书、旅行。
+            </p>
+            <p leading-8>
+              热爱计算机科学和 IT 互联网事业，希望能成为一名优秀的开发者。
+            </p>
+            <p leading-8>
+              我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。
+            </p>
+            <p leading-8>
+              We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.
+            </p>
           </div>
           <div>
             <img rounded-full w-25 src="https://blog.sunguoqi.com/images/avatar.jpg" alt="">
@@ -124,7 +134,7 @@ onMounted(() => {
         <div mb-10 flex flex-wrap justify-between>
           <div v-for="(item, index) in data.myProjects" :key="index" mx-10 my-4 class="basis-1/6">
             <a :href="item.link">
-              <div p-2 opacity-10 bg-white rounded-lg shadow-md flex-col backdrop-blur-3xl backdrop-opacity-60 hover:opacity-20 hover:skew-y-1 hover:backdrop-opacity-100>
+              <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
                 <div class="text-white" text-bold opacity-75>
                   {{ item.name }}
                 </div>
@@ -140,7 +150,7 @@ onMounted(() => {
         </div>
         <div flex flex-wrap justify-between>
           <div mx-10 my-4 class="basis-1/6">
-            <div p-2 opacity-10 rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:opacity-20 hover:skew-y-1 hover:backdrop-opacity-100>
+            <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
               <a href="https://github.com/sun0225SUN">
                 <div mb-1 text-white f-c-c>
                   <i i-ant-design-github-outlined />
@@ -152,7 +162,7 @@ onMounted(() => {
             </div>
           </div>
           <div mx-10 my-4 class="basis-1/6">
-            <div p-2 opacity-10 rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:opacity-20 hover:skew-y-1 hover:backdrop-opacity-100>
+            <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
               <a href="https://twitter.com/sun0225SUN">
                 <div mb-1 text-white f-c-c>
                   <i i-ant-design-x-outlined />
@@ -164,7 +174,7 @@ onMounted(() => {
             </div>
           </div>
           <div mx-10 my-4 class="basis-1/6">
-            <div p-2 opacity-10 rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:opacity-20 hover:skew-y-1 hover:backdrop-opacity-100>
+            <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
               <a href="https://youtube.com/@sun0225SUN">
                 <div mb-1 text-white f-c-c>
                   <i i-ant-design-youtube-outlined />
@@ -176,7 +186,7 @@ onMounted(() => {
             </div>
           </div>
           <div mx-10 my-4 class="basis-1/6">
-            <div p-2 opacity-10 rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:opacity-20 hover:skew-y-1 hover:backdrop-opacity-100>
+            <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
               <a href="https://space.bilibili.com/448488855/">
                 <div mb-1 text-white f-c-c>
                   <i i-ant-design-bilibili-outlined />
