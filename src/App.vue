@@ -57,20 +57,20 @@ const data = reactive({
 
   socialLinks: [{
     icon: '<i i-ant-design-github-outlined />',
-    link: '',
+    link: 'https://github.com/sun0225SUN',
     label: 'Github',
   }, {
     icon: '<i i-ant-design-x-outlined />',
-    link: '',
-    label: 'Github',
+    link: 'https://twitter.com/sun0225SUN',
+    label: 'Twitter',
   }, {
     icon: '<i i-ant-design-youtube-outlined />',
-    link: '',
-    label: 'Github',
+    link: 'https://youtube.com/@sun0225SUN',
+    label: 'YouTube',
   }, {
     icon: '<i i-ant-design-bilibili-outlined />',
-    link: '',
-    label: 'Github',
+    link: 'https://space.bilibili.com/448488855/',
+    label: 'Bilibili',
   }],
 })
 
@@ -124,19 +124,19 @@ onMounted(() => {
       </div>
       <div mx-10 mb-10 flex justify-between>
         <div class="text-white/80">
-          <p leading-8>
+          <p leading-10>
             嗨，你好，我是小孙同学。
           </p>
-          <p leading-8>
+          <p leading-10>
             热爱编程、摄影、读书、旅行。
           </p>
-          <p leading-8>
+          <p leading-10>
             热爱计算机科学和 IT 互联网事业，希望能成为一名优秀的开发者。
           </p>
-          <p leading-8>
+          <p leading-10>
             我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。
           </p>
-          <p leading-8>
+          <p leading-10>
             We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.
           </p>
         </div>
@@ -158,10 +158,10 @@ onMounted(() => {
         <div v-for="(item, index) in data.myProjects" :key="index" mx-10 my-4 class="basis-3/4 md:basis-1/6">
           <a :href="item.link">
             <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
-              <div class="text-white" text-bold opacity-75>
+              <div text-bold opacity-75 text-white>
                 {{ item.name }}
               </div>
-              <div class="text-white" opacity-50>
+              <div mt-1 opacity-50 text-3 text-white>
                 {{ item.description }}
               </div>
             </div>
@@ -174,22 +174,20 @@ onMounted(() => {
         Find Me
       </div>
       <div flex flex-wrap justify-between>
-        <div v-for="(item, index) in data.socialLinks" :key="index" mx-10 my-4 class="basis-1/6" hover:skew-y-1>
-          <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
-            <a :href="item.link">
-              <div mb-1 text-white f-c-c v-html="item.icon" />
-              <div text-bold opacity-75 text-white>{{ item.label }}</div>
-            </a>
-          </div>
+        <div v-for="(item, index) in data.socialLinks" :key="index" mx-10 my-4 class="basis-1/6">
+          <a p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100 :href="item.link">
+            <div mb-1 text-white f-c-c v-html="item.icon" />
+            <div text-bold opacity-75 text-white>{{ item.label }}</div>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- 底部 -->
     <footer>
-      <div mt-20 f-c-c class="text-white/60" hover:skew-y-1>
+      <div mt-100 f-c-c class="text-white/60" hover:skew-y-1>
         <i i-ant-design-environment-outlined mr-1 />
-        <div>路虽远行则将至，事虽难做则必成</div>
+        <p>路虽远行则将至，事虽难做则必成</p>
         <i i-ant-design-environment-outlined ml-1 />
       </div>
       <div mt-2 f-c-c class="text-white/60" gap-4>
