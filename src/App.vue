@@ -1,13 +1,71 @@
 <script setup>
+import { onMounted, reactive } from 'vue'
 import StarTrails from './components/StarTrails.vue'
 
-window.addEventListener('scroll', () => {
-  const bg = document.getElementById('background')
-  const scrollTop = window.scrollY
-  if (scrollTop > 0.7 * window.innerHeight)
-    bg.classList.add('fixed')
-  else
-    bg.classList.remove('fixed')
+// 数据
+const data = reactive({
+  myProjects: [{
+    name: 'Home',
+    description: '个人简介、主页、引导页',
+    link: 'https://github.com/sun0225SUN/home',
+  }, {
+    name: 'Blog',
+    description: '个人博客，学习&随笔',
+    link: 'https://github.com/sun0225SUN/blog',
+  }, {
+    name: 'Brain',
+    description: '知识库、第二大脑',
+    link: 'https://github.com/sun0225SUN/brain',
+  }, {
+    name: 'Camera',
+    description: '摄影相册',
+    link: 'https://github.com/sun0225SUN/camera',
+  }, {
+    name: 'Camera Tools',
+    description: '摄影工具箱',
+    link: 'https://github.com/sun0225SUN/camera-tools',
+  }, {
+    name: 'Bicycling',
+    description: '骑行主页',
+    link: 'https://github.com/sun0225SUN/bicycling',
+  }, {
+    name: 'Life-Map',
+    description: '人生地图、点亮足迹',
+    link: 'https://github.com/sun0225SUN/life-map',
+  }, {
+    name: 'Coder',
+    description: '闪闪发光的程序们',
+    link: 'https://github.com/sun0225SUN/coder',
+  }, {
+    name: 'Starter',
+    description: '前端项目起手架模版',
+    link: 'https://github.com/sun0225SUN/starter',
+  }],
+  navLinks: [{
+    name: '博 客',
+    link: 'https://blog.sunguoqi.com',
+  }, {
+    name: '相 册',
+    link: 'https://camera.sunguoqi.com',
+  }, {
+    name: '运 动',
+    link: 'https://bicycling.sunguoqi.com',
+  }, {
+    name: '留 言',
+    link: 'https://blog.sunguoqi.com/comments',
+  }],
+})
+
+onMounted(() => {
+  // 背景固定
+  window.addEventListener('scroll', () => {
+    const bg = document.getElementById('background')
+    const scrollTop = window.scrollY
+    if (scrollTop > 0.7 * window.innerHeight)
+      bg.classList.add('fixed')
+    else
+      bg.classList.remove('fixed')
+  })
 })
 </script>
 
@@ -22,7 +80,8 @@ window.addEventListener('scroll', () => {
   </div>
 
   <main bg-black bg-transparent absolute w-full top-0>
-    <div absolute top-70vh>
+    <div absolute w-full top-70vh>
+      <!-- 落地页 -->
       <div ml-15vw>
         <div text-10 text-white font-bold tracking-widest>
           你所热爱的<br>
@@ -34,98 +93,123 @@ window.addEventListener('scroll', () => {
             <div bg-yellow rounded-full h-3 w-3 />
             <div bg-green rounded-full h-3 w-3 />
           </div>
-          <div text-4 text-white>
+          <div text-4 text-white tracking-widest>
             小孙同学祝您今天快乐
           </div>
         </div>
       </div>
-      <div ml-30vw mt-50>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
-        <h1 text-white>
-          测试文本，占位
-        </h1>
+      <!-- 简介内容 -->
+      <div mx-10vw mt-70>
+        <div text-bold mb-4 ml-10 text-8 text-white>
+          About Me
+        </div>
+        <div mx-10 mb-10 flex justify-between>
+          <div class="text-white/80">
+            <p>嗨，你好，我是小孙同学。</p>
+            <p>热爱编程、摄影、读书、旅行。</p>
+            <p>热爱计算机科学和 IT 互联网事业，希望能成为一名优秀的开发者。</p>
+            <p>我们正在让这个世界变得更加美好，通过代码的重复使用和延展构建完美体系。</p>
+            <p>We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.</p>
+          </div>
+          <div>
+            <img rounded-full w-25 src="https://blog.sunguoqi.com/images/avatar.jpg" alt="">
+          </div>
+        </div>
+        <!-- <div text-bold mb-2 ml-10 text-8 text-white>
+          My Skills
+        </div> -->
+        <div text-bold mb-2 ml-10 text-8 text-white>
+          Projects
+        </div>
+        <div mb-10 flex flex-wrap justify-between>
+          <div v-for="(item, index) in data.myProjects" :key="index" mx-10 my-4 class="basis-1/6">
+            <a :href="item.link">
+              <div class="bg-white/10 hover:bg-white/20" p-2 rounded-lg shadow-md flex-c backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
+                <div class="text-white" text-bold opacity-75>
+                  {{ item.name }}
+                </div>
+                <div class="text-white" opacity-50>
+                  {{ item.description }}
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div text-bold mb-2 ml-10 text-8 text-white>
+          Find Me
+        </div>
+        <div flex flex-wrap justify-between>
+          <div mx-10 my-4 class="basis-1/6">
+            <div class="bg-white/10 hover:bg-white/20" p-2 rounded-lg shadow-md flex-c justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
+              <a href="https://github.com/sun0225SUN">
+                <div mb-1 text-white f-c-c>
+                  <i i-ant-design-github-outlined />
+                </div>
+                <div text-bold opacity-75 text-white>
+                  Github
+                </div>
+              </a>
+            </div>
+          </div>
+          <div mx-10 my-4 class="basis-1/6">
+            <div class="bg-white/10 hover:bg-white/20" p-2 rounded-lg shadow-md flex-c justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
+              <a href="https://twitter.com/sun0225SUN">
+                <div mb-1 text-white f-c-c>
+                  <i i-ant-design-x-outlined />
+                </div>
+                <div text-bold opacity-75 text-white>
+                  Twitter
+                </div>
+              </a>
+            </div>
+          </div>
+          <div mx-10 my-4 class="basis-1/6">
+            <div class="bg-white/10 hover:bg-white/20" p-2 rounded-lg shadow-md flex-c justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
+              <a href="https://youtube.com/@sun0225SUN">
+                <div mb-1 text-white f-c-c>
+                  <i i-ant-design-youtube-outlined />
+                </div>
+                <div text-bold opacity-75 text-white>
+                  YouTube
+                </div>
+              </a>
+            </div>
+          </div>
+          <div mx-10 my-4 class="basis-1/6">
+            <div class="bg-white/10 hover:bg-white/20" p-2 rounded-lg shadow-md flex-c justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
+              <a href="https://space.bilibili.com/448488855/">
+                <div mb-1 text-white f-c-c>
+                  <i i-ant-design-bilibili-outlined />
+                </div>
+                <div text-bold opacity-75 text-white>
+                  Bilibili
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
+
+      <footer>
+        <div mt-20 f-c-c class="text-white/60">
+          <i i-ant-design-environment-outlined mr-1 />
+          <div>路虽远行则将至，事虽难做则必成</div>
+          <i i-ant-design-environment-outlined ml-1 />
+        </div>
+        <div mt-2 f-c-c class="text-white/60" gap-4>
+          <div>皖 ICP 备 2021010058 号</div>
+          <div>皖公网安备 34040302000393 号</div>
+          <div>© 2024 小孙同学</div>
+        </div>
+      </footer>
     </div>
   </main>
 
-  <nav absolute fixed bottom-0 left-0>
-    <div>
-      <div mb-8 ml-2 flex-col gap-8 justify-center items-center>
-        <div text-3 text-white wv>
-          <a class="text-white" opacity-75 href="https://blog.sunguoqi.com" tracking-widest>博 客</a>
-        </div>
-        <div text-3 text-white wv>
-          <a class="text-white" opacity-75 href="https://camera.sunguoqi.com" tracking-widest>相 册</a>
-        </div>
-        <div text-3 text-white wv>
-          <a class="text-white" opacity-75 href="https://bicycling.sunguoqi.com" tracking-widest>运 动</a>
-        </div>
-        <div text-3 text-white wv>
-          <a class="text-white" opacity-75 href="https://blog.sunguoqi.com/comments" tracking-widest>留 言 板</a>
-        </div>
-      </div>
+  <nav absolute fixed bottom-4 left-4>
+    <div v-for="(item, index) in data.navLinks" :key="index" my-6 text-3 text-white wv>
+      <a class="text-white" :href="item.link" opacity-75 tracking-widest hover:opacity-100>
+        {{ item.name }}
+      </a>
     </div>
   </nav>
 </template>

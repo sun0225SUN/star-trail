@@ -19,6 +19,9 @@ devDependencies:
   '@antfu/eslint-config':
     specifier: ^2.6.1
     version: 2.6.1(@unocss/eslint-plugin@0.58.2)(@vue/compiler-sfc@3.4.0)(eslint-plugin-format@0.1.0)(eslint@8.56.0)(typescript@5.3.3)
+  '@iconify-json/ant-design':
+    specifier: ^1.1.15
+    version: 1.1.15
   '@unocss/eslint-plugin':
     specifier: ^0.58.2
     version: 0.58.2(eslint@8.56.0)(typescript@5.3.3)
@@ -809,6 +812,12 @@ packages:
 
   /@humanwhocodes/object-schema@2.0.1:
     resolution: {integrity: sha512-dvuCeX5fC9dXgJn9t+X5atfmgQAzUOWqS1254Gh0m6i8wKd10ebXkfNKiRK+1GWi/yTvvLDHpoxLr0xxxeslWw==}
+    dev: true
+
+  /@iconify-json/ant-design@1.1.15:
+    resolution: {integrity: sha512-E8XLyDo2HWVeVT8ViNTxF2+0Vgcox8FC73G4v64AM+lvlWpERcY90g7jXoBOeykl1pQCf1awkQUwjkynZ8Xb7A==}
+    dependencies:
+      '@iconify/types': 2.0.0
     dev: true
 
   /@iconify/types@2.0.0:
