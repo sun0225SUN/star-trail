@@ -124,7 +124,7 @@ onMounted(() => {
         <div mb-10 flex flex-wrap justify-between>
           <div v-for="(item, index) in data.myProjects" :key="index" mx-10 my-4 class="basis-1/6">
             <a :href="item.link">
-              <div class="bg-white/10 hover:bg-white/20" p-2 rounded-lg shadow-md flex-c backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
+              <div p-2 opacity-10 bg-white rounded-lg shadow-md flex-c backdrop-blur-3xl backdrop-opacity-60 hover:opacity-20 hover:skew-y-1 hover:backdrop-opacity-100>
                 <div class="text-white" text-bold opacity-75>
                   {{ item.name }}
                 </div>
@@ -140,7 +140,7 @@ onMounted(() => {
         </div>
         <div flex flex-wrap justify-between>
           <div mx-10 my-4 class="basis-1/6">
-            <div class="bg-white/10 hover:bg-white/20" p-2 rounded-lg shadow-md flex-c justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
+            <div p-2 opacity-10 rounded-lg shadow-md flex-c justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:opacity-20 hover:skew-y-1 hover:backdrop-opacity-100>
               <a href="https://github.com/sun0225SUN">
                 <div mb-1 text-white f-c-c>
                   <i i-ant-design-github-outlined />
@@ -152,7 +152,7 @@ onMounted(() => {
             </div>
           </div>
           <div mx-10 my-4 class="basis-1/6">
-            <div class="bg-white/10 hover:bg-white/20" p-2 rounded-lg shadow-md flex-c justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
+            <div p-2 opacity-10 rounded-lg shadow-md flex-c justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:opacity-20 hover:skew-y-1 hover:backdrop-opacity-100>
               <a href="https://twitter.com/sun0225SUN">
                 <div mb-1 text-white f-c-c>
                   <i i-ant-design-x-outlined />
@@ -164,7 +164,7 @@ onMounted(() => {
             </div>
           </div>
           <div mx-10 my-4 class="basis-1/6">
-            <div class="bg-white/10 hover:bg-white/20" p-2 rounded-lg shadow-md flex-c justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
+            <div p-2 opacity-10 rounded-lg shadow-md flex-c justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:opacity-20 hover:skew-y-1 hover:backdrop-opacity-100>
               <a href="https://youtube.com/@sun0225SUN">
                 <div mb-1 text-white f-c-c>
                   <i i-ant-design-youtube-outlined />
@@ -176,7 +176,7 @@ onMounted(() => {
             </div>
           </div>
           <div mx-10 my-4 class="basis-1/6">
-            <div class="bg-white/10 hover:bg-white/20" p-2 rounded-lg shadow-md flex-c justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
+            <div p-2 opacity-10 rounded-lg shadow-md flex-c justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:opacity-20 hover:skew-y-1 hover:backdrop-opacity-100>
               <a href="https://space.bilibili.com/448488855/">
                 <div mb-1 text-white f-c-c>
                   <i i-ant-design-bilibili-outlined />
