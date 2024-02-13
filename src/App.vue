@@ -132,13 +132,13 @@ onMounted(() => {
           Projects
         </div>
         <div mb-10 flex flex-wrap justify-between>
-          <div v-for="(item, index) in data.myProjects" :key="index" mx-10 my-4 class="basis-1/6">
+          <div v-for="(item, index) in data.myProjects" :key="index" mx-10 my-4 class="basis-3/4 md:basis-1/6">
             <a :href="item.link">
               <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
                 <div class="text-white" text-bold opacity-75>
                   {{ item.name }}
                 </div>
-                <div class="text-white" hidden opacity-50 md:block>
+                <div class="text-white" opacity-50>
                   {{ item.description }}
                 </div>
               </div>
@@ -149,7 +149,7 @@ onMounted(() => {
           Find Me
         </div>
         <div flex flex-wrap justify-between>
-          <div mx-10 my-4 class="basis-1/6">
+          <div mx-10 my-4 class="basis-1/6" hover:skew-y-1>
             <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
               <a href="https://github.com/sun0225SUN">
                 <div mb-1 text-white f-c-c>
@@ -161,7 +161,7 @@ onMounted(() => {
               </a>
             </div>
           </div>
-          <div mx-10 my-4 class="basis-1/6">
+          <div mx-10 my-4 class="basis-1/6" hover:skew-y-1>
             <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
               <a href="https://twitter.com/sun0225SUN">
                 <div mb-1 text-white f-c-c>
@@ -173,7 +173,7 @@ onMounted(() => {
               </a>
             </div>
           </div>
-          <div mx-10 my-4 class="basis-1/6">
+          <div mx-10 my-4 class="basis-1/6" hover:skew-y-1>
             <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
               <a href="https://youtube.com/@sun0225SUN">
                 <div mb-1 text-white f-c-c>
@@ -185,7 +185,7 @@ onMounted(() => {
               </a>
             </div>
           </div>
-          <div mx-10 my-4 class="basis-1/6">
+          <div mx-10 my-4 class="basis-1/6" hover:skew-y-1>
             <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
               <a href="https://space.bilibili.com/448488855/">
                 <div mb-1 text-white f-c-c>
@@ -201,7 +201,7 @@ onMounted(() => {
       </div>
 
       <footer>
-        <div mt-20 f-c-c class="text-white/60">
+        <div mt-20 f-c-c class="text-white/60" hover:skew-y-1>
           <i i-ant-design-environment-outlined mr-1 />
           <div>路虽远行则将至，事虽难做则必成</div>
           <i i-ant-design-environment-outlined ml-1 />
