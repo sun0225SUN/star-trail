@@ -122,7 +122,7 @@ onMounted(() => {
             </p>
           </div>
           <div>
-            <img rounded-full w-25 src="https://blog.sunguoqi.com/images/avatar.jpg" alt="">
+            <img hidden rounded-full w-25 md:block src="https://blog.sunguoqi.com/images/avatar.jpg" alt="">
           </div>
         </div>
         <!-- <div text-bold mb-2 ml-10 text-8 text-white>
@@ -138,7 +138,7 @@ onMounted(() => {
                 <div class="text-white" text-bold opacity-75>
                   {{ item.name }}
                 </div>
-                <div class="text-white" opacity-50>
+                <div class="text-white" hidden opacity-50 md:block>
                   {{ item.description }}
                 </div>
               </div>
