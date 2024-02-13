@@ -208,7 +208,6 @@ onMounted(() => {
         </div>
         <div mt-2 f-c-c class="text-white/60" gap-4>
           <div>皖 ICP 备 2021010058 号</div>
-          <div>皖公网安备 34040302000393 号</div>
           <div>© 2024 小孙同学</div>
         </div>
       </footer>
