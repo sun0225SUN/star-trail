@@ -4,18 +4,20 @@ import StarTrails from './components/StarTrails.vue'
 
 const data = reactive({
   titleList: [
-    '希望能成为有趣的人',
-    '给时光以生命<br>给岁月以文明',
-    '你好，请多指教',
-    '一望无际的迷雾中，<br/>有人在寻找光明！',
-    '你所热爱的<br>就是你的生活',
-    '当你在凝视着网页的时候<br>网页也正在凝视着你',
     '热爱……',
-    '平凡的日常正奇迹的发生着',
     '敬畏之心！',
     '赞美之心！',
     '我很好奇！',
+    '你好，请多指教',
     '*舒缓的现代音乐*',
+    '希望能成为有趣的人',
+    '相信美好的事情即将发生',
+    '平凡的日常正奇迹的发生着',
+    '你所热爱的<br/>就是你的生活',
+    '给时光以生命<br/>给岁月以文明',
+    '路虽远行则将至<br/>事虽难做则必成',
+    '一望无际的迷雾中<br/>有人在寻找光明',
+    '当你在凝视着网页的时候<br/>网页也正在凝视着你',
   ],
   navLinks: [{
     name: '博 客',
@@ -115,9 +117,7 @@ onMounted(() => {
   <main bg-transparent absolute w-full top-72vh z-10>
     <!-- 大标题 -->
     <section ml-15vw absolute>
-      <div text-10 text-white font-bold tracking-widest>
-        {{ data.titleList[Math.floor(Math.random() * data.titleList.length)] }}
-      </div>
+      <div text-10 text-white font-bold tracking-widest v-html="data.titleList[Math.floor(Math.random() * data.titleList.length)]" />
       <div flex items-center>
         <div mr-4 flex gap-2>
           <div bg-red rounded-full h-3 w-3 />
