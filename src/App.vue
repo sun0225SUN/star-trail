@@ -153,9 +153,7 @@ onMounted(() => {
             We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.
           </p>
         </div>
-        <div>
-          <img hidden rounded-full w-25 md:block src="https://blog.sunguoqi.com/images/avatar.jpg" alt="avatar">
-        </div>
+        <img hidden rounded-full h-25 w-25 transition md:block hover:-translate-y--2 src="https://blog.sunguoqi.com/images/avatar.jpg" alt="avatar">
       </div>
 
       <!-- 我的技能 -->
