@@ -114,7 +114,7 @@ onMounted(() => {
   </nav>
 
   <!-- 主体 -->
-  <main bg-transparent absolute w-full top-72vh z-10>
+  <main bg-transparent absolute w-full top-75vh z-10>
     <!-- 大标题 -->
     <section ml-15vw absolute>
       <div text-10 text-white font-bold tracking-widest v-html="data.titleList[Math.floor(Math.random() * data.titleList.length)]" />
@@ -130,7 +130,7 @@ onMounted(() => {
       </div>
     </section>
     <!-- 个人简介 -->
-    <section mx-9vw mt-110>
+    <section mx-9vw mt-90>
       <!-- 关于我 -->
       <div text-bold mb-4 ml-10 text-8 text-white>
         About Me
@@ -170,7 +170,7 @@ onMounted(() => {
       <div mb-10 flex flex-wrap justify-between>
         <div v-for="(item, index) in data.myProjects" :key="index" mx-10 my-4 class="basis-3/4 md:basis-1/6">
           <a :href="item.link">
-            <div p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100>
+            <div class="bg-white/5 hover:bg-white/10" p-2 rounded-lg shadow-md flex-col transition backdrop-blur-3xl backdrop-opacity-60 hover:backdrop-opacity-100 hover:-translate-y-2>
               <div text-bold opacity-75 text-white>
                 {{ item.name }}
               </div>
@@ -188,7 +188,7 @@ onMounted(() => {
       </div>
       <div flex flex-wrap justify-between>
         <div v-for="(item, index) in data.socialLinks" :key="index" mx-10 my-4 class="basis-1/6">
-          <a p-2 class="bg-white/5 hover:bg-white/10" rounded-lg shadow-md flex-col justify-between items-center backdrop-blur-3xl backdrop-opacity-60 hover:skew-y-1 hover:backdrop-opacity-100 :href="item.link">
+          <a class="bg-white/5 hover:bg-white/10" p-2 rounded-lg shadow-md flex-col justify-between items-center transition backdrop-blur-3xl backdrop-opacity-60 hover:backdrop-opacity-100 hover:-translate-y-2 :href="item.link">
             <div mb-1 text-white f-c-c v-html="item.icon" />
             <div text-bold opacity-75 text-white>{{ item.label }}</div>
           </a>
@@ -197,13 +197,13 @@ onMounted(() => {
     </section>
 
     <!-- 底部 -->
-    <footer>
-      <div mt-100 f-c-c class="text-white/60" hover:skew-y-1>
+    <footer mb-5>
+      <div class="text-white/60" mt-50 f-c-c>
         <i i-ant-design-environment-outlined mr-1 />
         <p>路虽远行则将至，事虽难做则必成</p>
         <i i-ant-design-environment-outlined ml-1 />
       </div>
-      <div class="text-white/60" mb-3 mt-2 f-c-c gap-4>
+      <div class="text-white/60" mt-2 f-c-c gap-4>
         <div>皖 ICP 备 2021010058 号</div>
         <div>© 2024 小孙同学</div>
       </div>
