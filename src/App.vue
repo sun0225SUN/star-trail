@@ -23,7 +23,7 @@ const data = reactive({
     name: '博 客',
     link: 'https://blog.sunguoqi.com',
   }, {
-    name: '相 册',
+    name: '影 集',
     link: 'https://camera.sunguoqi.com',
   }, {
     name: '运 动',
@@ -58,7 +58,7 @@ const data = reactive({
     description: '骑行主页',
     link: 'https://github.com/sun0225SUN/bicycling',
   }, {
-    name: 'Life-Map',
+    name: 'Life Map',
     description: '人生地图、点亮足迹',
     link: 'https://github.com/sun0225SUN/life-map',
   }, {
@@ -153,7 +153,7 @@ onMounted(() => {
             We're making the world a better place. Through constructing elegant hierarchies for maximum code reuse and extensibility.
           </p>
         </div>
-        <img hidden rounded-full h-25 w-25 transition md:block hover:-translate-y--2 src="https://blog.sunguoqi.com/images/avatar.jpg" alt="avatar">
+        <img hidden rounded-full h-25 w-25 transition md:block hover:-translate-y--2 src="./assets/images/avatar.webp" alt="avatar">
       </div>
 
       <!-- 我的技能 -->
